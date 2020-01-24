@@ -6,7 +6,7 @@ const router = express.Router();
 
 /*
 const studentAppNo = [
-  {id: 1, title: 'Finalize project', order: 1, completed: false, createdOn: new Date()},
+  {id: 1, title: 'Finalize project', order: 1, completed: false, createdOn: new Date(), updatedOn: new Date()},
   {id: 2, title: 'Book ticket to London', order: 2, completed: false, createdOn: new Date()},
   {id: 3, title: 'Finish last article', order: 3, completed: false, createdOn: new Date()},
   {id: 4, title: 'Get a new t-shirt', order: 4, completed: false, createdOn: new Date()},
@@ -62,7 +62,7 @@ router.put('/:id', (req, res) => {
     };
 
     let targetIndex = studentAppNo.indexOf(found);
-
+    
     studentAppNo.splice(targetIndex, 1, updated);
 
     res.sendStatus(204);

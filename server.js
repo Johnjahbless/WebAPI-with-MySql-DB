@@ -9,8 +9,6 @@ app.use(express.json());
 
 app.use('/users', itemsRouter);
 
-
-
 const server = http.createServer(app);
 
 const port = 3000;
